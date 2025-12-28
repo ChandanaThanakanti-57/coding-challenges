@@ -4,7 +4,7 @@ def combinations(n,k,curr,start):
         return
     for j in range(start,n+1):
         curr.append(j)
-        combinations(n,k,curr,start)
+        combinations(n,k,curr,j+1)
         curr.pop()
 combinations(4,2,[],1)
         
